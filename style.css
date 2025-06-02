@@ -17,6 +17,7 @@ header h1 {
     margin: 0;
     font-size: 2rem;
 }
+
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -34,6 +35,7 @@ main {
     gap: 1rem;
     justify-content: center;
 }
+
 .curiosidade-card {
     background-color: white;
     border-radius: 8px;
@@ -50,6 +52,7 @@ main {
 .curiosidade-card h3 {
     color: #0077cc;
 }
+
 footer {
     background-color: #15cb31;
     color: white;
