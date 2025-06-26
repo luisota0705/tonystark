@@ -1,177 +1,129 @@
-/* Fonte limpa e moderna */
-body {
+/* Resetando margens e padding */
+* {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
   color: #333;
+  padding: 20px;
 }
 
 /* Cabeçalho */
 header {
-  background-color: #004080;
-  color: white;
-  padding: 20px;
+  background-color: #333;
+  color: #fff;
   text-align: center;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin-bottom: 10px;
 }
 
 .nav-menu {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
 }
 
-.nav-menu a {
-  color: white;
+.nav-menu li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-menu li a {
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-.nav-menu a:hover {
-  text-decoration: underline;
+/* Seções principais */
+main {
+  margin: 20px 0;
 }
 
-/* Introdução */
+/* Seção de introdução */
 .intro {
   text-align: center;
-  padding: 40px 20px;
-}
-
-/* Vídeo */
-.video-section {
-  text-align: center;
   padding: 20px;
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* Cartões de curiosidade */
-.curiosidades {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 40px 20px;
-}
-
-.curiosidade-card {
-  display: block;
-  width: 300px;
-  text-decoration: none;
-  color: inherit;
-  background-color: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.curiosidade-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-}
-
-.curiosidade-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.curiosidade-info {
-  padding: 15px;
-}
-
-.curiosidade-info h3 {
-  margin-top: 0;
-  color: #004080;
-}
-
-.curiosidade-info p {
-  margin: 10px 0 0;
-}
-
-/* Rodapé */
-footer {
-  background-color: #004080;
-  color: white;
+.ancora-menu {
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  margin: 20px 0;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .nav-menu {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .curiosidade-card {
-    width: 90%;
-  }
-
-  .video-container iframe {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-.voltar-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #0077cc;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.voltar-btn:hover {
-  background-color: #005fa3;
-}
-
-body.fade-out {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-/* Estilo do menu de âncoras */
 .ancora-menu ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
-  display: flex;
-  flex-direction: column; /* empilha verticalmente */
-  align-items: center; /* centraliza horizontalmente */
-  gap: 1rem; /* espaço entre os itens */
+}
+
+.ancora-menu li {
+  display: inline;
+  margin: 10px 15px;
 }
 
 .ancora-menu li a {
   text-decoration: none;
-  color: inherit; /* herda a cor do texto, remove o azul padrão */
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border: 2px solid transparent;
-  display: inline-block;
+  color: #333;
+  font-weight: bold;
 }
 
-.ancora-menu li a:hover,
-.ancora-menu li a:focus {
-  background-color: #ddd; /* cinza claro ao passar o mouse */
-  color: black;
-  outline: none;
-  border-color: #aaa;
+.curiosidade-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.curiosidade-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.curiosidade-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.curiosidade-card:hover {
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .nav-menu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .curiosidade-card {
+    margin: 10px;
+  }
+
+  .curiosidade-card img {
+    width: 150px;
+    height: 150px;
+  }
 }

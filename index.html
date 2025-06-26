@@ -1,102 +1,112 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curiosidades Incríveis</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
 
-    <!-- Cabeçalho -->
-    <header>
-      <div class="container">
-        <h1>Curiosidades Incríveis</h1>
-        <nav>
-          <ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descubra curiosidades fascinantes sobre ciência, natureza e o universo.">
+  <meta name="keywords" content="curiosidades, ciência, universo, natureza, fatos incríveis, conhecimento">
+  <meta name="author" content="Luis Otavio Inacio Pereira">
+  <title>Curiosidades Incríveis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <h1>Curiosidades Incríveis</h1>
+      <nav aria-label="Menu principal">
+        <ul class="nav-menu">
           <li><a href="index.html">Início</a></li>
           <li><a href="curiosidades.html">Curiosidades</a></li>
           <li><a href="sugestoes.html">Sugestões</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Seção Principal -->
-    <section style="text-align: center; margin: 30px 0;">
-      <h2>Curiosidades Inúteis</h2>
-      <ul style="list-style: none; padding: 0;">
-        <li><a href="#ancora1">Curiosidades Iniciais</a></li>
-        <li><a href="#ancora2">💧 Curiosidades sobre Água Quente</a></li>
-        <li><a href="#ancora3">🍌 Curiosidades sobre Bananas</a></li>
-        <li><a href="#ancora4">🦒 Curiosidades sobre Girafas</a></li>
-        <li><a href="#ancora5">🦩 Curiosidades sobre Flamingos</a></li>
-      </ul>
+  <!-- Seção Principal -->
+  <section class="intro" aria-labelledby="intro-title">
+    <h2 id="intro-title">Curiosidades Inúteis</h2>
+    <p>Descubra curiosidades fascinantes e surpreendentes sobre o mundo ao nosso redor!</p>
+  </section>
+
+  <!-- LINKS DE ASSUNTOS CURIOSOS COM ÂNCORAS -->
+  <section class="ancora-menu">
+    <ul>
+      <li><a href="#ancora1">Curiosidades Iniciais</a></li>
+      <li><a href="#ancora2">💧 Curiosidades sobre Água Quente</a></li>
+      <li><a href="#ancora3">🍌 Curiosidades sobre Bananas</a></li>
+      <li><a href="#ancora4">🦒 Curiosidades sobre Girafas</a></li>
+      <li><a href="#ancora5">🦩 Curiosidades sobre Flamingos</a></li>
+    </ul>
+  </section>
+
+  <main>
+    <!-- Curiosidades Iniciais -->
+    <section id="ancora1" class="curiosidades">
+      <h2>Curiosidades Iniciais</h2>
+      <div class="curiosidade-card">
+        <img src="yt.png" width="200" height="200" alt="Youtube">
+        <h3>Você sabia?</h3>
+        <p>A cada minuto, cerca de 72 horas de conteúdo são enviadas ao site de vídeos YouTube. Isso mostra a quantidade
+          de informação que é compartilhada diariamente na plataforma.</p>
+      </div>
+
+      <div class="curiosidade-card">
+        <img src="lua.jpg" width="200" height="200" alt="Lua">
+        <h3>Fato curioso</h3>
+        <p>A Lua se afasta da Terra cerca de 3,8 cm por ano.</p>
+      </div>
+
+      <div class="curiosidade-card">
+        <img src="estrela.jpg" width="200" height="200" alt="Estrelas no universo">
+        <h3>Incrível!</h3>
+        <p>Existem mais estrelas no universo do que grãos de areia em todas as praias da Terra.</p>
+      </div>
     </section>
 
-    <main>
-      <section id="intro" class="intro">
-        <h2>Descubra curiosidades fascinantes sobre o mundo ao nosso redor!</h2>
-        <p>Prepare-se para se surpreender com fatos incríveis e pouco conhecidos.</p>
+    <!-- Curiosidades Inúteis -->
+    <section id="curiosidades" class="curiosidades">
+      <h2>Curiosidades Diversas</h2>
+      <p>Duvido que você sabia disso!!!</p>
+
+      <!-- Curiosidade 1 -->
+      <section id="ancora2" class="curiosidade-card">
+        <h3>💧 Curiosidades sobre Água Quente</h3>
+        <p>A água quente congela mais rápido do que a água fria, um fenômeno conhecido como "efeito Mpemba".</p>
       </section>
 
-      <!-- Curiosidades Iniciais -->
-      <section id="ancora1" class="curiosidades">
-        <h2>Curiosidades Iniciais</h2>
-        <div class="curiosidade-card">
-          <img src="yt.png" width="200" height="200" alt="Youtube">
-          <h3>Você sabia?</h3>
-          <p>A cada minuto, cerca de 72 horas de conteúdo são enviadas ao site de vídeos YouTube. Isso mostra a quantidade de informação que é compartilhada diariamente na plataforma.</p>
-        </div>
-
-        <div class="curiosidade-card">
-          <img src="lua.jpg" width="200" height="200" alt="Lua">
-          <h3>Fato curioso</h3>
-          <p>A Lua se afasta da Terra cerca de 3,8 cm por ano.</p>
-        </div>
-
-        <div class="curiosidade-card">
-          <img src="estrela.jpg" width="200" height="200" alt="Estrelas no universo">
-          <h3>Incrível!</h3>
-          <p>Existem mais estrelas no universo do que grãos de areia em todas as praias da Terra.</p>
-        </div>
+      <!-- Curiosidade 2 -->
+      <section id="ancora3" class="curiosidade-card">
+        <h3>🍌 Curiosidades sobre Bananas</h3>
+        <p>As bananas são radioativas! Elas contêm potássio-40, um isótopo radioativo do potássio.</p>
       </section>
 
-      <!-- Curiosidades Inúteis -->
-      <section id="curiosidades" class="curiosidades">
-        <h2>Curiosidades Sem Sentido</h2>
-        <p>Duvido que você sabia disso!!!</p>
-
-        <!-- Curiosidade 1 -->
-        <section id="ancora2" class="curiosidade-card">
-          <h3>💧 Curiosidades sobre Água Quente</h3>
-          <p>A água quente congela mais rápido do que a água fria, um fenômeno conhecido como "efeito Mpemba".</p>
-        </section>
-
-        <!-- Curiosidade 2 -->
-        <section id="ancora3" class="curiosidade-card">
-          <h3>🍌 Curiosidades sobre Bananas</h3>
-          <p>As bananas são radioativas! Elas contêm potássio-40, um isótopo radioativo do potássio.</p>
-        </section>
-
-        <!-- Curiosidade 3 -->
-        <section id="ancora4" class="curiosidade-card">
-          <h3>🦒 Curiosidades sobre Girafas</h3>
-          <p>As girafas não têm cordas vocais, o que significa que elas não conseguem emitir sons, mas podem se comunicar por vibrações e movimentos corporais.</p>
-        </section>
-
-        <!-- Curiosidade 4 -->
-        <section id="ancora5" class="curiosidade-card">
-          <h3>🦩 Curiosidades sobre Flamingos</h3>
-          <p>Flamingos não nascem com a cor rosa. Eles começam com uma cor branca ou cinza e adquirem sua coloração característica por conta dos carotenoides presentes em sua alimentação.</p>
-        </section>
+      <!-- Curiosidade 3 -->
+      <section id="ancora4" class="curiosidade-card">
+        <h3>🦒 Curiosidades sobre Girafas</h3>
+        <p>As girafas não têm cordas vocais, o que significa que elas não conseguem emitir sons, mas podem se comunicar
+          por vibrações e movimentos corporais.</p>
       </section>
 
-    </main>
+      <!-- Curiosidade 4 -->
+      <section id="ancora5" class="curiosidade-card">
+        <h3>🦩 Curiosidades sobre Flamingos</h3>
+        <p>Flamingos não nascem com a cor rosa. Eles começam com uma cor branca ou cinza e adquirem sua coloração
+          característica por conta dos carotenoides presentes em sua alimentação.</p>
+      </section>
+    </section>
 
-    <!-- Rodapé -->
-    <footer id="footer">
-      <p>Site desenvolvido por Luis Otavio Inacio Pereira - Colégio Estadual Vicente Rijo - Londrina PR</p>
-    </footer>
+  </main>
 
-  </body>
+  <!-- Rodapé -->
+  <footer id="footer">
+    <p>Site desenvolvido por <strong>Luis Otavio Inacio Pereira</strong><br>
+      Colégio Estadual Vicente Rijo - Londrina, PR</p>
+  </footer>
+
+</body>
+
 </html>
