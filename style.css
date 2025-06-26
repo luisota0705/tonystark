@@ -20,13 +20,34 @@ header {
   padding: 20px 0;
 }
 
+/* Centraliza o conteúdo do cabeçalho */
 header .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center;     /* Centraliza os itens verticalmente */
+  padding: 20px;           /* Adiciona um pouco de espaço */
 }
 
+/* Centraliza a lista de navegação */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;  /* Centraliza os links */
+  margin: 0;                /* Remove a margem da lista */
+  padding: 0;               /* Remove o padding da lista */
+}
+
+/* Estiliza os itens da lista */
+header nav ul li {
+  margin: 0 15px;           /* Adiciona espaço entre os links */
+}
+
+/* Estilo dos links */
+header nav ul li a {
+  text-decoration: none;    /* Remove o sublinhado dos links */
+  color: #000;              /* Cor do texto */
+  font-size: 16px;          /* Tamanho da fonte */
+}
 nav ul {
   list-style: none;
   display: flex;
